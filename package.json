@@ -1,0 +1,23 @@
+{
+  "name": "dynamic-ui-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "make start",
+    "start": "make start",
+    "build": "make build",
+    "preview": "make preview"
+  },
+  "devDependencies": {
+    "@types/opentype.js": "^1.3.8",
+    "@types/paper": "^0.12.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1"
+  },
+  "packageManager": "yarn@3.6.2",
+  "dependencies": {
+    "opentype.js": "^1.3.4",
+    "paper": "^0.12.17"
+  }
+}
