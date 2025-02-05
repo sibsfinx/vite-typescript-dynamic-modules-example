@@ -1,6 +1,7 @@
 node_modules
 .yarn/cache
 install_stage.gz
+.yarn/install-state.gz
 
 dist
 lib
