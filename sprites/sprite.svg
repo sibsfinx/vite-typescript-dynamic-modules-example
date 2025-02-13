@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="icon-play" viewBox="0 0 24 24">
+        <path d="M8,5 L19,12 L8,19 L8,5 Z"/>
+    </symbol>
+    <symbol id="icon-pause" viewBox="0 0 24 24">
+        <path d="M6,5 H10 V19 H6 V5 M14,5 H18 V19 H14 V5"/>
+    </symbol>
+    <symbol id="icon-stop" viewBox="0 0 24 24">
+        <rect x="6" y="6" width="12" height="12"/>
+    </symbol>
+</svg>

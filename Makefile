@@ -1,4 +1,4 @@
-.PHONY: check run-all install start dev build preview
+.PHONY: check run-all install start dev build build-lib build-app preview
 
 .DEFAULT_GOAL := run-all
 
@@ -19,8 +19,14 @@ start:
 dev:
 	make start
 
+build-lib:
+	yarn build:lib
+
+build-app:
+	yarn build:app
+
 build:
-	yarn tsc && yarn vite build
+	yarn build
 
 preview:
 	yarn vite preview
