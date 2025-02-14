@@ -1,12 +1,14 @@
 /// <reference types="vite/client" />
 
-declare module '/scripts/example-wasm.js' {
+// WebAssembly module types
+declare module '/scripts/*.js' {
   export function initWasm(): Promise<{
     instance: WebAssembly.Instance;
     worker: Worker;
   }>;
 }
 
+// Settings module types
 declare module '/settings/*.js' {
   const config: {
     apiUrl: string;

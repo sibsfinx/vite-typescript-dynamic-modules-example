@@ -59,7 +59,7 @@ buttonContainer.appendChild(paperButton)
 async function testWasm() {
   try {
     const { initWasm } = await import('/scripts/example-wasm.js')
-    const wasm = await initWasm()
+    await initWasm() // Initialize but don't store the instance
     document.getElementById('wasm-test')!.textContent = 'WebAssembly loaded successfully!'
   } catch (error: unknown) {
     const errorMessage = error instanceof Error ? error.message : String(error)
@@ -88,7 +88,7 @@ async function displayConfig() {
 async function loadAnimation() {
   try {
     const response = await fetch('/assets/Vectary_animation_128px.json')
-    const animationData = await response.json()
+    await response.json() // Parse but don't store the data
     
     // You would typically use lottie-web here, but for testing we'll just show the data
     const container = document.getElementById('lottie-container')

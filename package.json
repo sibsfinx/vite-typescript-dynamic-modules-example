@@ -4,12 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "make start",
-    "start": "make start",
-    "build": "yarn build:lib && yarn build:app",
-    "build:lib": "tsc",
-    "build:app": "vite build",
-    "preview": "make preview"
+    "dev": "tsx scripts/dev-server.ts",
+    "start": "tsx scripts/dev-server.ts",
+    "build": "tsx scripts/build.ts",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@types/node": "^20.11.30",
@@ -17,6 +15,7 @@
     "@types/paper": "^0.12.3",
     "@types/serve-static": "^1.15.7",
     "serve-static": "^1.16.2",
+    "tsx": "^4.19.2",
     "typescript": "^5.2.2",
     "vite": "^5.3.1"
   },
